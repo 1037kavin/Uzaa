@@ -1,0 +1,275 @@
+// Mock data for the Uzaa app
+
+export const SCHEMES = [
+  {
+    id: '1',
+    title: 'Pradhan Mantri Fasal Bima Yojana',
+    description: 'Crop insurance scheme to provide financial support to farmers suffering crop loss/damage due to unforeseen events.',
+    eligibility: 'All farmers growing notified crops in notified areas.',
+    benefits: 'Financial assistance in case of crop failure due to natural calamities.',
+    deadline: '2023-12-31',
+    status: 'Active',
+    image: null,
+  },
+  {
+    id: '2',
+    title: 'PM Kisan Samman Nidhi',
+    description: 'Income support scheme for farmers to help them meet farming expenses and household needs.',
+    eligibility: 'All landholding farmers\' families.',
+    benefits: 'Rs. 6,000 per year in three equal installments.',
+    deadline: '2023-10-15',
+    status: 'Active',
+    image: null,
+  },
+  {
+    id: '3',
+    title: 'Kisan Credit Card',
+    description: 'Provides farmers with timely access to credit.',
+    eligibility: 'All farmers, sharecroppers, and tenant farmers.',
+    benefits: 'Revolving credit facility with simplified renewal process.',
+    deadline: '2023-11-30',
+    status: 'Active',
+    image: null,
+  },
+  {
+    id: '4',
+    title: 'Soil Health Card Scheme',
+    description: 'Provides information on soil nutrient status and recommendations for appropriate dosage of nutrients.',
+    eligibility: 'All farmers with agricultural land.',
+    benefits: 'Improved soil health and increased productivity.',
+    deadline: '2023-09-30',
+    status: 'Active',
+    image: null,
+  },
+];
+
+export const CROPS = [
+  {
+    id: '1',
+    name: 'Rice',
+    scientificName: 'Oryza sativa',
+    season: 'Kharif',
+    soilTypes: ['Clayey', 'Loamy'],
+    waterRequirement: 'High',
+    fertilizers: ['Urea', 'DAP', 'Potash'],
+    image: null,
+    description: 'A staple food crop grown in flooded fields.',
+  },
+  {
+    id: '2',
+    name: 'Wheat',
+    scientificName: 'Triticum aestivum',
+    season: 'Rabi',
+    soilTypes: ['Loamy', 'Clay Loam'],
+    waterRequirement: 'Medium',
+    fertilizers: ['Urea', 'DAP', 'MOP'],
+    image: null,
+    description: 'A major cereal grain cultivated worldwide.',
+  },
+  {
+    id: '3',
+    name: 'Maize',
+    scientificName: 'Zea mays',
+    season: 'Kharif, Rabi',
+    soilTypes: ['Loamy', 'Sandy Loam'],
+    waterRequirement: 'Medium',
+    fertilizers: ['Urea', 'DAP', 'Zinc Sulphate'],
+    image: null,
+    description: 'Also known as corn, a versatile crop used for food and feed.',
+  },
+  {
+    id: '4',
+    name: 'Cotton',
+    scientificName: 'Gossypium hirsutum',
+    season: 'Kharif',
+    soilTypes: ['Black Cotton Soil', 'Alluvial'],
+    waterRequirement: 'Medium',
+    fertilizers: ['Urea', 'SSP', 'MOP'],
+    image: null,
+    description: 'A major cash crop grown for its fiber.',
+  },
+];
+
+export const FERTILIZERS = [
+  {
+    id: '1',
+    name: 'Urea',
+    nutrientContent: 'Nitrogen (46%)',
+    crops: ['Rice', 'Wheat', 'Maize', 'Cotton'],
+    application: 'Apply in 2-3 splits depending on crop stage.',
+    precautions: 'Avoid application during heavy rainfall.',
+    image: null,
+  },
+  {
+    id: '2',
+    name: 'DAP (Di-Ammonium Phosphate)',
+    nutrientContent: 'Nitrogen (18%), Phosphorus (46%)',
+    crops: ['Rice', 'Wheat', 'Maize', 'Pulses'],
+    application: 'Apply as basal dose before sowing.',
+    precautions: 'Store in dry place away from moisture.',
+    image: null,
+  },
+  {
+    id: '3',
+    name: 'MOP (Muriate of Potash)',
+    nutrientContent: 'Potassium (60%)',
+    crops: ['Fruits', 'Vegetables', 'Wheat', 'Rice'],
+    application: 'Apply as basal dose or top dressing.',
+    precautions: 'Avoid direct contact with seeds.',
+    image: null,
+  },
+  {
+    id: '4',
+    name: 'NPK Complex',
+    nutrientContent: 'Nitrogen, Phosphorus, Potassium in balanced ratio',
+    crops: ['All crops'],
+    application: 'Apply as per soil test recommendations.',
+    precautions: 'Keep away from children and pets.',
+    image: null,
+  },
+];
+
+export const WEATHER_DATA = [
+  {
+    id: '1',
+    date: '2023-08-25',
+    temperature: {
+      min: 24,
+      max: 32,
+    },
+    humidity: 75,
+    precipitation: 30,
+    windSpeed: 12,
+    condition: 'Rainy',
+    icon: 'rainy',
+    advisory: 'Avoid spraying pesticides due to expected rainfall.',
+  },
+  {
+    id: '2',
+    date: '2023-08-26',
+    temperature: {
+      min: 25,
+      max: 33,
+    },
+    humidity: 70,
+    precipitation: 10,
+    windSpeed: 10,
+    condition: 'Partly Cloudy',
+    icon: 'partly-cloudy',
+    advisory: 'Good day for light irrigation.',
+  },
+  {
+    id: '3',
+    date: '2023-08-27',
+    temperature: {
+      min: 26,
+      max: 34,
+    },
+    humidity: 65,
+    precipitation: 0,
+    windSpeed: 8,
+    condition: 'Sunny',
+    icon: 'sunny',
+    advisory: 'Ideal conditions for harvesting mature crops.',
+  },
+  {
+    id: '4',
+    date: '2023-08-28',
+    temperature: {
+      min: 25,
+      max: 31,
+    },
+    humidity: 80,
+    precipitation: 60,
+    windSpeed: 15,
+    condition: 'Thunderstorm',
+    icon: 'thunderstorm',
+    advisory: 'Secure young plants and avoid field operations.',
+  },
+  {
+    id: '5',
+    date: '2023-08-29',
+    temperature: {
+      min: 24,
+      max: 30,
+    },
+    humidity: 85,
+    precipitation: 70,
+    windSpeed: 14,
+    condition: 'Heavy Rain',
+    icon: 'heavy-rain',
+    advisory: 'Ensure proper drainage in fields to prevent waterlogging.',
+  },
+];
+
+export const NOTIFICATIONS = [
+  {
+    id: '1',
+    title: 'Scheme Application Approved',
+    message: 'Your application for PM Kisan Samman Nidhi has been approved.',
+    date: '2023-08-20',
+    read: false,
+    type: 'success',
+  },
+  {
+    id: '2',
+    title: 'Weather Alert',
+    message: 'Heavy rainfall expected in your region in the next 48 hours.',
+    date: '2023-08-22',
+    read: true,
+    type: 'warning',
+  },
+  {
+    id: '3',
+    title: 'New Scheme Available',
+    message: 'New subsidy scheme for organic farming has been launched.',
+    date: '2023-08-23',
+    read: false,
+    type: 'info',
+  },
+  {
+    id: '4',
+    title: 'Crop Advisory',
+    message: 'Time to apply second dose of fertilizer for your wheat crop.',
+    date: '2023-08-24',
+    read: false,
+    type: 'info',
+  },
+];
+
+export const USER_PROFILE = {
+  id: '1',
+  name: 'Rajesh Kumar',
+  phone: '+91 9876543210',
+  email: 'rajesh.kumar@example.com',
+  location: 'Jaipur, Rajasthan',
+  farmSize: '5 acres',
+  crops: ['Wheat', 'Rice', 'Mustard'],
+  soilType: 'Loamy',
+  irrigationType: 'Drip Irrigation',
+  registeredSchemes: ['PM Kisan Samman Nidhi', 'Soil Health Card Scheme'],
+};
+
+export const SOIL_TYPES = [
+  { label: 'Clayey', value: 'clayey' },
+  { label: 'Loamy', value: 'loamy' },
+  { label: 'Sandy', value: 'sandy' },
+  { label: 'Silt', value: 'silt' },
+  { label: 'Black Cotton Soil', value: 'black_cotton' },
+  { label: 'Red Soil', value: 'red_soil' },
+  { label: 'Alluvial', value: 'alluvial' },
+];
+
+export const SEASONS = [
+  { label: 'Kharif', value: 'kharif' },
+  { label: 'Rabi', value: 'rabi' },
+  { label: 'Zaid', value: 'zaid' },
+];
+
+export const IRRIGATION_TYPES = [
+  { label: 'Flood Irrigation', value: 'flood' },
+  { label: 'Drip Irrigation', value: 'drip' },
+  { label: 'Sprinkler Irrigation', value: 'sprinkler' },
+  { label: 'Furrow Irrigation', value: 'furrow' },
+  { label: 'Rainfed', value: 'rainfed' },
+];
