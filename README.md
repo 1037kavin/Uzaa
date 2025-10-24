@@ -2,6 +2,8 @@
 
 Uzaa is a mobile-first agricultural assistant app designed to help farmers access agricultural schemes, get crop recommendations, check weather advisories, and more.
 
+
+
 ## Features
 
 ### For Farmers
